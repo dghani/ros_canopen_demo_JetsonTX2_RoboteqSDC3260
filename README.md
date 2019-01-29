@@ -3,10 +3,20 @@ This is a minimal amount of code needed to start ROS and communicate with a moto
 
 ### Code not included:
 
-The TX2 is running SocketCAN.
+The Jetson is running SocketCAN.
 
 "ros-kinetic-ros-canopen" is the Ubuntu apt package used.
 
 "ros-kinetic-desktop-full" is the Ubuntu ROS installation used.
+
+### Physical setup
+
+TODO: include pic.
+
+CAN transceiver connected to Jetson: https://www.waveshare.com/wiki/SN65HVD230_CAN_Board
+
+SDC3260 Motor controller: https://www.roboteq.com/index.php/roboteq-products-and-services/brushed-dc-motor-controllers/405/sdc3260-detail
+
+Motor: [Some brushed DC motor from Anaheim Automation]
 
 

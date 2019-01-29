@@ -10,7 +10,7 @@
   </material>
 
 
-  <link name="base_link">
+  <link name="stationary_base_link">
     <visual>
       <geometry>
         <cylinder length="0.6" radius="0.2"/>
@@ -19,14 +19,14 @@
     </visual>
   </link>
 
-  <joint name="head_swivel" type="continuous">
-    <parent link="base_link"/>
-    <child link="head"/>
+  <joint name="rotating_joint_1" type="continuous">
+    <parent link="stationary_base_link"/>
+    <child link="spinning_box"/>
     <axis xyz="0 0 1"/>
     <origin xyz="0 0 0.3"/>
   </joint>
 
-  <link name="head">
+  <link name="spinning_box">
     <visual>
       <geometry>
         <box size="0.2 0.2 0.2"/>

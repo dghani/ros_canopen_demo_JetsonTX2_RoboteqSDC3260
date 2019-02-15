@@ -1,0 +1,17 @@
+joint_state_controller:
+   type: joint_state_controller/JointStateController
+   publish_rate: 50
+
+# Velocity Controllers ---------------------------------------
+rotation_joint_1_velocity_controller:
+   type: effort_controllers/JointVelocityController
+   joint: rotating_joint_1
+   pid: {p: 3.0, i: 0.0, d: 0.0}
+   required_drive_mode: 2 # canopen_402 "Velocity" drive mode 
+# Notes:
+# Don't know what values to set for rotation_joint_1_velocity_controller PID controller.
+#  Is the "pid" parameter optional? What happens if it is omitted?
+# Concerning "required_drive_mode":
+#  It says that we must include this parameter on http://wiki.ros.org/canopen_motor_node
+#  Do we want to use "Velocity" or "Profiled Velocity" drive mode, as listed on http://wiki.ros.org/canopen_402#Drive_operation_modes ?
+

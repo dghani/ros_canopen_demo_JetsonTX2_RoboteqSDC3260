@@ -6,12 +6,10 @@ sync:
   interval_ms: 10  # 100Hz
   overflow: 0
 nodes:
-  node1: # is this supposed to be the name of a joint??? e.g. "head_swivel" from our model.urdf file
-    id: 1
+  rotating_joint_1:
+    id: 12
     eds_pkg: canopen_motor_node
     eds_file: "config/roboteq_motor_controllers_v60.eds"
-
-
-#can_module: SOCKETCAN
-#can_device: can0
-#can_baudrate: 250
+# Notes:
+# I don't know whether we need to override the default value of the parameter "switching state", which is omitted here.
+# One example of this driver.config file lists the CAN baud rate as part of the config, however, the file overall seemed to be of a bit different format than this one. I didn't specify the baud rate. I assume that when we intialize the can0 interface, we'll set the baud rate then, and ros_canopen doesn't need to know about it.

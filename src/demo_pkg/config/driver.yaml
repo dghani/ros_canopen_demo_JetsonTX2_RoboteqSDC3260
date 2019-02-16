@@ -11,5 +11,5 @@ nodes:
     eds_pkg: canopen_motor_node
     eds_file: "config/roboteq_motor_controllers_v60.eds"
 # Notes:
-# I don't know whether we need to override the default value of the parameter "switching state", which is omitted here.
+# Don't know whether we need to override the default value of the parameter "switching state", which is omitted here.
 # One example of this driver.config file lists the CAN baud rate as part of the config, however, the file overall seemed to be of a bit different format than this one. I didn't specify the baud rate. I assume that when we intialize the can0 interface, we'll set the baud rate then, and ros_canopen doesn't need to know about it.

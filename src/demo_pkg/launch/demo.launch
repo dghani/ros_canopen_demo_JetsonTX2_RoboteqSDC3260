@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- upload robot description -->
+<param name="robot_description" textfile="$(find demo_pkg)/urdf/model.urdf"/>
+
+<!-- upload driver config as private parameters -->
+<node pkg="canopen_motor_node" name="canopen_motor_node" type="canopen_motor_node" >
+	<rosparam file="$(find demo_pkg)/config/driver.yaml" command="load" />
+</node>
+
+<!-- upload controller config into namespace -->
+
+<!-- 
+    <arg name="name" value="rig12" />
+    <arg name="sim" value="false" />
+
+    <include file="$(find canopen_test_utils)/launch/test_setup_robot.xml">
+        <arg name="name" value="$(arg name)"/>
+        <arg name="sim" value="$(arg sim)"/>
+    </include>
+    <include file="$(find canopen_test_utils)/launch/test_setup_controller.xml">
+        <arg name="name" value="$(arg name)"/>
+        <arg name="sim" value="$(arg sim)"/>
+    </include>
+-->
+
+</launch>

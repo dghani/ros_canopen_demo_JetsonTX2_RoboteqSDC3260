@@ -25,8 +25,8 @@ Motor: [Some brushed DC motor from Anaheim Automation]
 
 ### Run the code
 
+```cd ros_canopen_demo_JetsonTX2_RoboteqSDC3260
 source devel/setup.bash
-
-roslaunch demo_pkg demo.launch
+roslaunch demo_pkg demo.launch```
 
 

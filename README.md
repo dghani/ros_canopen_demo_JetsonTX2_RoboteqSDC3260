@@ -14,13 +14,11 @@ The Jetson is running SocketCAN.
 
 ### Physical setup
 
-TODO: include pic.
-
 CAN transceiver connected to Jetson: https://www.waveshare.com/wiki/SN65HVD230_CAN_Board
 
 SDC3260 Motor controller: https://www.roboteq.com/index.php/roboteq-products-and-services/brushed-dc-motor-controllers/405/sdc3260-detail
 
-Motor: [Some brushed DC motor from Anaheim Automation]
+Motor: [Brushed DC motor from Anaheim Automation]
 
 
 ### Run the code
